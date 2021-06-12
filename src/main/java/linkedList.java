@@ -35,6 +35,9 @@ public class linkedList {
         sites.addLast("wiki2");
         // removeFirst 移除头部
         // removeLast 移除尾部
+        System.out.println(sites.stream().count());
+        System.out.println(sites.indexOf("Google"));
+        System.out.println(sites.get(0));
         System.out.println(sites);
     }
 }

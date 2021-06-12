@@ -36,9 +36,10 @@ public class hashset {
         sites.add("Runoob");  // 重复的元素不会被添加
 
         System.out.println(sites);
-        System.out.println(sites.size());
-        for (String a : sites) {
-            System.out.println(a);
+        System.out.println(sites instanceof Set);
+        for(String s:sites){
+            System.out.println(s);
         }
+        System.out.println(sites.contains("Zhihu"));
     }
 }

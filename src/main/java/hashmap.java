@@ -14,6 +14,7 @@ public class hashmap {
         Sites.put(4, "Zhihan");
         System.out.println(Sites.hashCode());
         System.out.println(Sites);
+        Sites.remove(1);
         for (Integer i : Sites.keySet()) {
             System.out.println("key: " + i + " value: " + Sites.get(i));
         }
