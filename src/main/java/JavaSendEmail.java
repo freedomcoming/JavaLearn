@@ -1,7 +1,6 @@
 import javax.mail.*;
 import java.util.*;
 import javax.mail.internet.*;
-import javax.activation.*;
 
 public class JavaSendEmail {
     public static void main(String[] args) throws Exception {

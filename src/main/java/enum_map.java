@@ -3,7 +3,7 @@ import java.util.*;
 
 public class enum_map {
     public static void main(String[] args) {
-        Map<DayOfWeek, String> map = new EnumMap(DayOfWeek.class);
+        Map<DayOfWeek, String> map = new EnumMap<DayOfWeek, String>(DayOfWeek.class);
         map.put(DayOfWeek.MONDAY, "星期一");
         map.put(DayOfWeek.TUESDAY, "星期二");
         map.put(DayOfWeek.WEDNESDAY, "星期三");

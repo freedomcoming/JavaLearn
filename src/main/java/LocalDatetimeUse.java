@@ -17,6 +17,8 @@ public class LocalDatetimeUse {
         LocalDate d_ = LocalDate.parse("2019-11-19");
         LocalTime t_ = LocalTime.parse("15:16:17");
         System.out.println(dt_);
+        System.out.println(d_);
+        System.out.println(t_);
 
         // 自定义格式化
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");

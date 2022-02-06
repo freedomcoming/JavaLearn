@@ -6,7 +6,7 @@ public class stack_ {
         System.out.println(sk.isEmpty());//判断栈是否为空，true
         for (int i = 0; i < 10; i++) {
             int e = sk.push(i + 20);//将元素加入栈顶，并返回栈顶元素
-//            System.out.println(i + ":  " + e);
+           System.out.println(i + ":  " + e);
         }
         System.out.println(sk.empty());//判断栈是否为空，false
         System.out.println(sk.pop());//返回栈顶元素，并删除

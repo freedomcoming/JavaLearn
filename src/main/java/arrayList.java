@@ -6,7 +6,7 @@ public class arrayList {
 //        E: 泛型数据类型，用于设置 objectName 的数据类型，只能为引用数据类型。
 //        ArrayList<String> sites = new ArrayList<String>();
 
-        ArrayList<String> sites = new ArrayList();
+        ArrayList<String> sites = new ArrayList<String>();
         sites.add("Google");
         sites.add("Runoob");
         sites.add("Taobao");

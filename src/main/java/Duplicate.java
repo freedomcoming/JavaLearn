@@ -5,5 +5,7 @@ public class Duplicate {
 
     public static void main(String[] args) {
         Duplicate myPuppy = new Duplicate("tommy");
+
+        System.out.println(myPuppy);
     }
 }
