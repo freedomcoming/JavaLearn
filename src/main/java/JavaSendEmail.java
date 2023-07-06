@@ -8,7 +8,7 @@ public class JavaSendEmail {
         Properties properties = new Properties();
         properties.setProperty("mail.smtp.host", "smtp.yeah.net"); //设置协议主机
         properties.setProperty("mail.smtp.auth", "true"); //设置smtp是否需要认证
-        properties.setProperty("mail.smtp.ssl.enable", "true");
+        properties.setProperty("mail.smtp.ssl.enable", "false"); // 修改可以解决问题
 
 
         //2.根据属性获得一个会话

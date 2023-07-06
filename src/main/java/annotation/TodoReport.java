@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 public class TodoReport {
 
     public static void main(String[] args) {
+
         getToDoReportForBusinessLogic();
     }
 
@@ -12,7 +13,9 @@ public class TodoReport {
      * 解析使用注解的类，获取通过注解设置的属性
      */
     private static void getToDoReportForBusinessLogic() {
-        Class<BusinessLogic> businessLogicClass = BusinessLogic.class;
+        Class businessLogicClass = BusinessLogic.class;
+        System.out.println(BusinessLogic.class); // class annotation.BusinessLogic
+        System.out.println(businessLogicClass.getMethods());
         for (Method method : businessLogicClass.getMethods()) {
             ToDo ToDoAnnotation = method.getAnnotation(ToDo.class);
             if (ToDoAnnotation != null) {
