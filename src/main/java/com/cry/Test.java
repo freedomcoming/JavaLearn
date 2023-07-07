@@ -26,11 +26,19 @@ class Dog extends Animal implements I1, I2 {
     protected static int sDogProtected;
     static int sDogDefault;
     public static int sDogPublic;
+
+    public  void sayHi(){
+        System.out.println("say hello");
+    }
 }
 public class Test {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
+
+
+
 //        Class<Dog> dog = Dog.class;
         Class dog = Dog.class;
+//        dog.newInstance()
         //类名打印
         System.out.println(dog.getName()); //com.cry.Dog
         System.out.println(dog.getSimpleName()); //Dog
@@ -58,6 +66,12 @@ public class Test {
         //创建对象
         Dog d = (Dog) dog.newInstance();
         d.mAnimalDefault = 1;
+        d.sayHi();
+
+        Dog d2 = (Dog) Class.forName("com.cry.Dog").newInstance();
+
+        d2.sayHi();
+
 
         System.out.println(d.mAnimalDefault);
         //字段
