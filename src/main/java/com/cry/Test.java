@@ -85,6 +85,7 @@ public class Test {
             sAnimalPublic
             mCellPublic  //父类的父类的公共字段也打印出来了
          */
+        // test
         System.out.println("---------");
         for (Field f : dog.getDeclaredFields()) {
             System.out.println(f.getName());
