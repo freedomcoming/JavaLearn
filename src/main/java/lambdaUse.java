@@ -1,13 +1,15 @@
+
+interface GreetingService {
+    void sayMessage(String message);
+}
 public class lambdaUse {
     final static String salutation = "Hello! ";
 
     public static void main(String args[]) {
-        GreetingService greetService1 = message ->
+        GreetingService greetService = message ->
                 System.out.println(salutation + message);
-        greetService1.sayMessage("Runoob");
+        greetService.sayMessage("Ru noob");
     }
 
-    interface GreetingService {
-        void sayMessage(String message);
-    }
+
 }

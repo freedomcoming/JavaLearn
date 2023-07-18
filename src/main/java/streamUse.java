@@ -1,5 +1,6 @@
 import java.util.List;
 
+// 匿名函数用法
 public class streamUse {
     public static void main(String[] args) {
         List.of("  Apple ", " pear ", " ORANGE", " BaNaNa ")
